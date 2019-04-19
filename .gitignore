@@ -1,0 +1,5 @@
+**/.ipynb_checkpoints
+out/*
+**/*.pyc
+**/__pycache__
+**/cifar100/*
