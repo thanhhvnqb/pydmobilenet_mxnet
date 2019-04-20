@@ -5,7 +5,20 @@
 3. Gluoncv. By command: 'pip install gluoncv'
 
 ## Main results
+### Network architecture (CIFAR)
+
+| Group | Output size |Networks |
+| --- | :-: | :-: |
+| Image | 32x32x3 | |
+| Convolution | 32x32x32 |3x3 Convolution  |
+| Stage 1 | 32x32x32 | Residual block x6 |
+| Stage 2 | 16x16x64 | Residual block x6 |
+| Stage 3 | 8x8x128 | Residual block x6 |
+| Pooling | 1x1x128 | 8x8 Global Average Pooling |
+| Classifier | 1x1x10/100 | 10/100D Fully-Connected |
+
 ### CIFAR
+- Number of channels: {32, 32, 64, 128, 128}
 
 | Model | Depth | #Params | FLOPs | CIFAR-10 | CIFAR-100 |
 | --- | :-: | :-: | :-: | :-: | :-: |
@@ -42,6 +55,7 @@
 
 Notes: #Params are for CIFAR-10 dataset. For CIFAR-100: #Params + (128 + 1) * 100 - (128 + 1) * 10
 ### ImageNet32
+- Number of channels: {64, 64, 128, 256, 1280}
 
 | Model | Depth | #Params | Top-1 | Top-5 |
 | --- | :-: | :-: | :-: | :-: |
