@@ -1,6 +1,6 @@
 # PydMobileNet: Deep Residual Networks with Pyramid Depthwise Separable Convolution
 ## Dependencies
-1. Mxnet >= 1.3.0. To install the mxnet, follow the instruction in https://mxnet.incubator.apache.org/install/index.html?platform=Linux|language=Python|processor=GPU
+1. Mxnet >= 1.3.0. To install the mxnet, follow the instruction in https://mxnet.incubator.apache.org/install/index.html
 2. Numpy. By command: 'pip install numpy'
 3. Gluoncv. By command: 'pip install gluoncv'
 
