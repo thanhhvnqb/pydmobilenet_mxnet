@@ -49,9 +49,9 @@ Notes: #Params are for CIFAR-10 dataset. For CIFAR-100: #Params + (128 + 1) * 10
 | WRN-28-5 | 28 | 9.5M | 45.36 | 21.36 |
 | WRN-28-10 | 28 | 37.1M | 40.96 | 18.87 |
 | | | | | | |
-| PyramidNet-0.25 | 56 | 2.23M | 48.18 | 23.70 |
-| PyramidNet-0.5 | 56 | 2.80M | 44.70 | 20.58 |
-| PyramidMobile-0.75 | 56 | 3.37M | 41.99 | 18.59 |
+| PydMobileNet-Concat-56-0.25 | 56 | 2.23M | 48.18 | 23.70 |
+| PydMobileNet-Concat-56-0.5 | 56 | 2.80M | 44.70 | 20.58 |
+| PydMobileNet-Concat-56-0.75 | 56 | 3.37M | 41.99 | 18.59 |
 
 ## Run validation
 - To validate all models, run 'python run_validation.py'
