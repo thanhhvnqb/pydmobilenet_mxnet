@@ -1,6 +1,6 @@
 # PydMobileNet: Deep Residual Networks with Pyramid Depthwise Separable Convolution
 ## Dependencies
-1. Mxnet >= 1.3.0. To install the mxnet, follow the instruction in https://mxnet.incubator.apache.org/install/index.html?platform=Linux&language=Python&processor=GPU
+1. Mxnet >= 1.3.0. To install the mxnet, follow the instruction in https://mxnet.incubator.apache.org/install/index.html?platform=Linux|language=Python|processor=GPU
 2. Numpy. By command: 'pip install numpy'
 3. Gluoncv. By command: 'pip install gluoncv'
 
@@ -43,6 +43,15 @@
 Notes: #Params are for CIFAR-10 dataset. For CIFAR-100: #Params + (128 + 1) * 100 - (128 + 1) * 10
 ### ImageNet32
 
+| Model | Depth | #Params | Top-1 | Top-5 |
+| --- | :-: | :-: | :-: | :-: |
+| WRN-28-2 | 28 | 1.6M | 56.92 | 30.92 |
+| WRN-28-5 | 28 | 9.5M | 45.36 | 21.36 |
+| WRN-28-10 | 28 | 37.1M | 40.96 | 18.87 |
+| | | | | | |
+| PyramidNet-0.25 | 56 | 2.23M | 48.18 | 23.70 |
+| PyramidNet-0.5 | 56 | 2.80M | 44.70 | 20.58 |
+| PyramidMobile-0.75 | 56 | 3.37M | 41.99 | 18.59 |
 
 ## Run validation
 - To validate all models, run 'python run_validation.py'
@@ -52,7 +61,7 @@ Notes: #Params are for CIFAR-10 dataset. For CIFAR-100: #Params + (128 + 1) * 10
 ## Citation
 Please cite these papers in your publications if it helps your research:
 
-    @ARTICLE{thanh2018tii3d,
+    @ARTICLE{thanh2018arxiv,
       author    = {Van{-}Thanh, Hoang and Kang{-}Hyun, Jo},
       title     = {PydMobileNet: Improved Version of MobileNets with Pyramid Depthwise Separable Convolution},
       journal   = {CoRR},
